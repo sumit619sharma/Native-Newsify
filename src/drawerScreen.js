@@ -85,7 +85,7 @@ const CustomDrawerContent = props => {
 const DrawerScreen = () => {
     const Drawer = createDrawerNavigator();
     return (
-        <Drawer.Navigator drawerContent={props => <CustomDrawerContent {...props} />}>
+        <Drawer.Navigator  drawerContent={(props) => <CustomDrawerContent {...props} />}>
             <Drawer.Screen
                 name="Newsify"
                 component={Common}
